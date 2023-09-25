@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="mystyle.css" />
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/6a309e1749.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Countries</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="naslov">Where is the world</h1>
+
+        <div class="toogle-mode">
+          <p class="darkmode-text">Dark mode</p>
+          <input type="checkbox" id="toggle-button" class="checkbox" />
+          <label class="label" for="toggle-button">
+            <p class="off">off</p>
+            <p class="on">on</p>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="form-container">
+        <div class="form">
+          <input
+            type="text"
+            placeholder="Search for the country"
+            class="searchCountry"
+          />
+          <i class="fa-solid fa-magnifying-glass search"></i>
+        </div>
+
+        <div class="dropdown-content">
+          <div class="dropdown-menu">
+            <p>Filter By Reagion</p>
+            <button><i class="fa-solid fa-chevron-up" id="arrow"></i></button>
+          </div>
+          <div class="drop showDropDown">
+            <p class="region">All</p>
+            <p class="region">Africa</p>
+            <p class="region">America</p>
+            <p class="region">Asia</p>
+            <p class="region">Europe</p>
+            <p class="region">Oceania</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="countries"></div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

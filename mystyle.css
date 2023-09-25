@@ -1,0 +1,210 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(207, 26%, 17%);
+    width: 100%;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.naslov {
+    align-self: center;
+}
+
+/* dark mode on- off */
+.toogle-mode {
+    display: flex;
+    margin: 30px;
+}
+
+.darkmode-text {
+    align-self: center;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.label {
+    background-image: linear-gradient(to left, hsl(146, 68%, 55%), hsl(0, 78%, 56%));
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+    
+} 
+
+.label .ball {
+    background-color: hsl(230, 17%, 14%);
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.3s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+/* toogle off code */
+.toogle-off {
+    background: hsl(0, 0%, 98%);
+    color: black;
+}
+
+
+/* dark mode on- off  kraj*/
+
+
+/* form-container */
+
+hr {
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.form {
+    width: 300px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form input {
+    width: 100%;
+    padding: 17px 14px;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.form i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color:  hsl(207, 26%, 17%);
+}
+
+.dropdown-content {
+    width: 200px;
+    position: relative;
+}
+
+i {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 17px 15px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+
+.drop {
+    position: absolute;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    top: 4rem;
+    padding: 17px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.drop p {
+    margin: 5px 0;
+}
+
+
+/* content */
+
+.countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 30px;
+    max-width: 300;
+    gap: 30px;
+    
+}
+
+.country {
+    min-height: 350px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+}
+
+.country-flag {
+    height: 300px;
+}
+
+.country-flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.country-info {
+    padding: 20px 17px;
+}
+
+.country-info h4 {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.country-info p {
+    font-size: 20px;
+}
+
+.showDropDown {
+    display: none;
+}
+
